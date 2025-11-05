@@ -1,6 +1,6 @@
 ﻿namespace Integrativa.Domain.Entities
 {
-    public class Produto : BaseEntity
+    public sealed class Produto : BaseEntity
     {
     }
 }

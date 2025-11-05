@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Integrativa.Domain.Interfaces
 {
-    internal interface IFornecedorRepository : IBaseRepository<Fornecedor>
+    public interface IFornecedorRepository : IBaseRepository<Fornecedor>
     {
 
     }

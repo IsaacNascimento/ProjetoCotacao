@@ -1,7 +1,7 @@
 ﻿
 namespace Integrativa.Domain.Entities
 {
-    public class Cotacao : BaseEntity
+    public sealed class Cotacao : BaseEntity
     {
         public DateTime Data { get; set; }
         public Fornecedor Fornecedor { get; set; }

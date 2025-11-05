@@ -1,14 +1,9 @@
 ﻿using Integrativa.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Integrativa.Domain.Interfaces
 {
-    internal interface ICotacaoRepository : IBaseRepository<Cotacao>
+    public interface ICotacaoRepository : IBaseRepository<Cotacao>
     {
-        Task<Cotacao> ObterPorMenorPreco(int id);
+        Task<Cotacao> ObterPorMenorPreco();
     }
 }
