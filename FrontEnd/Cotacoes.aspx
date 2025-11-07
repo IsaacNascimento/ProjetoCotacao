@@ -7,8 +7,6 @@
 
     <div style="margin-bottom: 10px;">
         <asp:Button ID="btnRefresh" runat="server" Text="Atualizar" OnClick="btnRefresh_Click" CssClass="btn btn-secondary" />
-        &nbsp;
-        <asp:Button ID="btnMenor" runat="server" Text="Menor Cotação" OnClick="btnMenor_Click" CssClass="btn btn-primary" />
     </div>
 
     <asp:GridView ID="gvCotacoes" runat="server" AutoGenerateColumns="false"
@@ -17,8 +15,7 @@
         <Columns>
             <asp:BoundField DataField="Id" HeaderText="ID" />
             <asp:BoundField DataField="Data" HeaderText="Data" DataFormatString="{0:yyyy-MM-dd}" />
-            <asp:BoundField DataField="Preco" HeaderText="Preço" DataFormatString="{0:N2}" />
-            <asp:BoundField DataField="FornecedorId" HeaderText="FornecedorId" />
+            <asp:BoundField DataField="Preco" HeaderText="Preco" DataFormatString="{0:N2}" />
             <asp:BoundField DataField="NomeFornecedor" HeaderText="Fornecedor" />
             <asp:BoundField DataField="NomeProduto" HeaderText="Produto" />
         </Columns>
@@ -26,7 +23,17 @@
 
     <br />
 
-    <asp:Panel ID="pnlMenor" runat="server" Visible="false" CssClass="alert alert-success">
-        <asp:Label ID="lblMenor" runat="server" CssClass="fw-bold" />
+    <h3>Menor Cotação</h3>
+    <asp:Panel ID="pnlMenor" runat="server" Visible="false">
+        <asp:GridView ID="gvMenor" runat="server" AutoGenerateColumns="false"
+            CssClass="table table-success" EmptyDataText="Nenhuma cotação disponível">
+            <Columns>
+                <asp:BoundField DataField="Id" HeaderText="ID" />
+                <asp:BoundField DataField="Data" HeaderText="Data" DataFormatString="{0:yyyy-MM-dd}" />
+                <asp:BoundField DataField="Preco" HeaderText="Preco" DataFormatString="{0:N2}" />
+                <asp:BoundField DataField="NomeFornecedor" HeaderText="Fornecedor" />
+                <asp:BoundField DataField="NomeProduto" HeaderText="Produto" />
+            </Columns>
+        </asp:GridView>
     </asp:Panel>
 </asp:Content>
