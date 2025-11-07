@@ -10,8 +10,14 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <nav style="background:#eee;padding:10px;">
+    <a runat="server" href="~/Default.aspx" style="margin-right:20px;">Home</a>
+    <a runat="server" href="~/Produtos.aspx" style="margin-right:20px;">Produtos</a>
+    <a runat="server" href="~/ProdutoCriar.aspx" style="margin-right:20px;">Criar Produto</a>
+</nav>
     <div>
         <h1>Mobile Master Page</h1>
+
         <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
         <section class="content-wrapper main-content clear-fix">
             <asp:ContentPlaceHolder runat="server" ID="MainContent" />

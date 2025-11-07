@@ -25,7 +25,11 @@ namespace Cotacao.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> RegistrarProduto([FromBody] Produto produto)
         {
-            await _repository.Create(produto);
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var entity = new Produto { Nome = produto.Nome };
+            await _repository.Create(entity);
             return Ok("Cadastrado!");
         }
     }
