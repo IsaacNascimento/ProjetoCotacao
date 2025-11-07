@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Integrativa.Domain.Interfaces;
-using Integrativa.Persistence.Context;
-using Integrativa.Domain.Entities;
+using Cotacao.Domain.Interfaces;
+using Cotacao.Domain.Entities;
+using Cotacao.Persistence.Context;
 
-namespace Integrativa.Persistence.Repositories
+namespace Cotacao.Persistence.Repositories
 {
     public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
     {

@@ -1,6 +1,6 @@
-using Integrativa.Domain.Interfaces;
-using Integrativa.Persistence.Context;
-using Integrativa.Persistence.Repositories;
+using Cotacao.Domain.Interfaces;
+using Cotacao.Persistence.Context;
+using Cotacao.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

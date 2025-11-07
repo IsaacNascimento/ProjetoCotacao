@@ -1,8 +1,8 @@
-﻿using Integrativa.Domain.Interfaces;
-using Integrativa.Domain.Entities;
-using Integrativa.Persistence.Context;
+﻿using Cotacao.Domain.Interfaces;
+using Cotacao.Domain.Entities;
+using Cotacao.Persistence.Context;
 
-namespace Integrativa.Persistence.Repositories
+namespace Cotacao.Persistence.Repositories
 {
     public class ProdutoRepository : BaseRepository<Produto>, IProdutoRepository
     {

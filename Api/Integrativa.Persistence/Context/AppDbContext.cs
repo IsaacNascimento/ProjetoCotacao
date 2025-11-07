@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Integrativa.Domain.Entities;
-
-namespace Integrativa.Persistence.Context
+using Cotacao.Domain.Entities;
+    
+namespace Cotacao.Persistence.Context
 {
     public class AppDbContext : DbContext
     {
@@ -9,6 +9,6 @@ namespace Integrativa.Persistence.Context
 
         public DbSet<Fornecedor> fornecedor { get; set; }
         public DbSet<Produto> produto { get; set; }
-        public DbSet<Cotacao> cotacao { get; set; }
+        public DbSet<CotacaoEntity> cotacao { get; set; }
     }
 }

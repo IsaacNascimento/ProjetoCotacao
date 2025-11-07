@@ -1,22 +1,17 @@
-﻿using Integrativa.Domain.Entities;
-using Integrativa.Domain.Interfaces;
-using Integrativa.Persistence.Context;
+﻿using Cotacao.Domain.Entities;
+using Cotacao.Domain.Interfaces;
+using Cotacao.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Integrativa.Persistence.Repositories
+namespace Cotacao.Persistence.Repositories
 {
-    public class CotacaoRepository : BaseRepository<Cotacao>, ICotacaoRepository
+    public class CotacaoRepository : BaseRepository<CotacaoEntity>, ICotacaoRepository
     {
         public CotacaoRepository(AppDbContext dbContext) : base(dbContext)
         {
         }
 
-        public async Task<Cotacao> ObterPorMenorPreco()
+        public async Task<CotacaoEntity> ObterPorMenorPreco()
         {
             var menorCotacao = await DbContext.cotacao
                 .OrderBy(x => x.Preco)

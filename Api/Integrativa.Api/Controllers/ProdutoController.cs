@@ -1,8 +1,8 @@
-﻿using Integrativa.Domain.Entities;
-using Integrativa.Domain.Interfaces;
+﻿using Cotacao.Domain.Entities;
+using Cotacao.Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Integrativa.Api.Controllers
+namespace Cotacao.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

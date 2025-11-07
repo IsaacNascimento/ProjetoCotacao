@@ -1,9 +1,9 @@
 ﻿
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Integrativa.Domain.Entities
+namespace Cotacao.Domain.Entities
 {
-    public sealed class Cotacao : BaseEntity
+    public sealed class CotacaoEntity : BaseEntity
     {
         [Column("data")]
         public DateTime Data { get; set; }

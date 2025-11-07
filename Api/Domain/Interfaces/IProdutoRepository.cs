@@ -1,6 +1,6 @@
-﻿using Integrativa.Domain.Entities;
+﻿using Cotacao.Domain.Entities;
 
-namespace Integrativa.Domain.Interfaces
+namespace Cotacao.Domain.Interfaces
 {
     public interface IProdutoRepository : IBaseRepository<Produto>
     {

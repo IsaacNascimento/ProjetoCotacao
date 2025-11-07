@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Integrativa.Domain.Entities
+namespace Cotacao.Domain.Entities
 {
     public class BaseEntity
     {

@@ -9,11 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{C710D1FF-6D5E-4168-8A3F-F7F1A032F8EB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integrativa.Domain", "Domain\Integrativa.Domain.csproj", "{4D2E1218-1EA3-43F7-A124-E81AD961AF90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cotacao.Domain", "Domain\Cotacao.Domain.csproj", "{4D2E1218-1EA3-43F7-A124-E81AD961AF90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integrativa.Persistence", "Integrativa.Persistence\Integrativa.Persistence.csproj", "{325DFB29-2E84-4778-AF20-EB617C7471F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cotacao.Persistence", "Integrativa.Persistence\Cotacao.Persistence.csproj", "{325DFB29-2E84-4778-AF20-EB617C7471F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integrativa.Api", "Integrativa.Api\Integrativa.Api.csproj", "{EBCF0BC0-08CE-4955-8CAC-6F6DA2B0C1C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cotacao.Api", "Integrativa.Api\Cotacao.Api.csproj", "{EBCF0BC0-08CE-4955-8CAC-6F6DA2B0C1C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

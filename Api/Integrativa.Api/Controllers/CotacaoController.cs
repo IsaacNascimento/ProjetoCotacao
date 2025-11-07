@@ -1,8 +1,8 @@
-﻿using Integrativa.Domain.Entities;
-using Integrativa.Domain.Interfaces;
+﻿using Cotacao.Domain.Interfaces;
+using Cotacao.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Integrativa.Api.Controllers
+namespace Cotacao.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -23,7 +23,7 @@ namespace Integrativa.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> RegistrarProduto([FromBody] Cotacao cotacao)
+        public async Task<IActionResult> RegistrarProduto([FromBody] CotacaoEntity cotacao)
         {
             await _repository.Create(cotacao);
             return Ok("Cadastrado!");

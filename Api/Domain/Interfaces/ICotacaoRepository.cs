@@ -1,9 +1,9 @@
-﻿using Integrativa.Domain.Entities;
+﻿using Cotacao.Domain.Entities;
 
-namespace Integrativa.Domain.Interfaces
+namespace Cotacao.Domain.Interfaces
 {
-    public interface ICotacaoRepository : IBaseRepository<Cotacao>
+    public interface ICotacaoRepository : IBaseRepository<CotacaoEntity>
     {
-        Task<Cotacao> ObterPorMenorPreco();
+        Task<CotacaoEntity> ObterPorMenorPreco();
     }
 }

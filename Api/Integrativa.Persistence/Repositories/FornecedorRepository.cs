@@ -1,8 +1,8 @@
-﻿using Integrativa.Domain.Entities;
-using Integrativa.Domain.Interfaces;
-using Integrativa.Persistence.Context;
+﻿using Cotacao.Domain.Entities;
+using Cotacao.Domain.Interfaces;
+using Cotacao.Persistence.Context;
 
-namespace Integrativa.Persistence.Repositories
+namespace Cotacao.Persistence.Repositories
 {
     public class FornecedorRepository : BaseRepository<Fornecedor>, IFornecedorRepository
     {
